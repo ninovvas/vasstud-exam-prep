@@ -28,3 +28,7 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm run test:unit
+    - name: Print my username
+      env:
+        username: "VasStud"
+      run: echo "{$username}"
